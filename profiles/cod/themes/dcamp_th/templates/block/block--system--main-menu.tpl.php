@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Omega's implementation to display a block.
+ * Minimal theme implementation to display a block.
  *
  * Available variables:
  * - $block->subject: Block title.
@@ -43,14 +43,18 @@
  *
  * @ingroup themeable
  */
+
 ?>
-<div<?php print $attributes; ?>>
-  <?php print render($title_prefix); ?>
-  <?php if ($block->subject): ?>
-    <h2<?php print $title_attributes; ?>><?php print $block->subject; ?></h2>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
-  <div<?php print $content_attributes; ?>>
-    <?php print $content; ?>
+<div class="menu-fixed">
+
+  <div class="l-container">
+    <a href="/" class="logo">
+      <img src="<?php print base_path() . path_to_theme(); ?>/logo.png" alt="dcamp_th">
+    </a>
+
+    <nav<?php print $attributes; ?>>
+      <?php print $content; ?>
+    </nav>
   </div>
+
 </div>
