@@ -212,8 +212,21 @@
  *   );
  * @endcode
  */
-$databases = array();
-
+$databases = array (
+  'default' =>
+  array (
+    'default' =>
+    array (
+      'database' => '2016camp',
+      'username' => '2016camp',
+      'password' => '2016camp',
+      'host' => 'localhost',
+      'port' => '',
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),
+  ),
+);
 /**
  * Access control for update.php script.
  *
