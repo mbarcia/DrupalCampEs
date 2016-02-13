@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the AED News Home feature.
+ */
+
+include_once 'aed_news_home.features.inc';

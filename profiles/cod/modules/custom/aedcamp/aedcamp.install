@@ -670,3 +670,11 @@ function aedcamp_update_7019() {
   $modules = array('aed_collaborators');
   module_enable($modules);
 }
+
+/**
+ * Enables the aed_news_home feature.
+ */
+function aedcamp_update_7020() {
+  $modules = array('aed_news_home');
+  module_enable($modules);
+}

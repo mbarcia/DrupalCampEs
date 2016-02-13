@@ -1,0 +1,13 @@
+name = AED News Home
+description = Feature to capture configuration of the view news_home
+core = 7.x
+package = AED
+version = 7.x-1.0
+project = aed_news_home
+dependencies[] = commerce_coupon
+dependencies[] = commerce_features
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = news_home
+features_exclude[dependencies][ctools] = ctools

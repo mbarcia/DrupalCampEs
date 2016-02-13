@@ -22,3 +22,4 @@ dependencies[] = commerce_product
 dependencies[] = l10n_update
 dependencies[] = less
 dependencies[] = panels_mini
+dependencies[] = aed_news_home
